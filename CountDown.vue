@@ -1,10 +1,10 @@
 <template>
     <div id="custom-count-down">
         <div class="countdown-header">
-            <span>DIAS</span>
-            <span>HORAS</span>
-            <span>MINUTOS</span>
-            <span>SEGUNDOS</span>
+            <span>{{customHeaderText.dias}}</span>
+            <span>{{customHeaderText.horas}}</span>
+            <span>{{customHeaderText.minutos}}</span>
+            <span>{{customHeaderText.segundos}}</span>
         </div>
         <div class="countdown-container">
             <div class="contenedor" :style="customStyles">
@@ -99,6 +99,15 @@
                 type: String,
                 default: '#ccc',
             },
+            customHeaderText: {
+                type: JSON,
+                default: {
+                    dias: 'D',
+                    horas: 'H',
+                    minutos: 'M',
+                    segundos: 'S',
+                }
+            }
         },
         data(){
             return {

@@ -57,6 +57,21 @@ Este repositorio contiene un componente de reloj (count-down) que permite inerta
 
 - Establece el color del texto de los valores del reloj.
 
+---
+### custom-header-text(opcional)
+
+- JSON que establece el texto del header del reloj, su estructura es la siguiente.
+
+```
+    customHeaderText: {
+                    dias: 'D',
+                    horas: 'H',
+                    minutos: 'M',
+                    segundos: 'S',
+                }
+            
+```
+
 ## Eventos
 
 ### @on-finish
@@ -109,3 +124,17 @@ Este repositorio contiene un componente de reloj (count-down) que permite inerta
 ```
 <count-down :stop-time="timeToStopVar" :clock-type="'up'" @time-stoped="eventoFinalizacion" :identifier="'countdown customizado'"></count-down>
 ```
+---
+
+## Cómo funciona
+
+```
+    Reloj 1
+    <count-down :time="240" clockType="down" @on-finish="eventoFinalizacion" :identifier="'countdown customizado'"></count-down>
+
+    Reloj 2
+    <count-down :text-color="color1" :background-color="color2"  :clock-type="'up'" @time-stoped="eventoFinalizacion" :identifier="'countdown customizado'"></count-down>
+```
+
+![Interfaz principal](./images/reloj.gif)  
+

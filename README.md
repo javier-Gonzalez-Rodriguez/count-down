@@ -57,4 +57,5 @@ Este repositorio contiene un componente de reloj (count-down) que permite inerta
 
 - Establece el color del texto de los valores del reloj.
 
----
+## Configuración
+

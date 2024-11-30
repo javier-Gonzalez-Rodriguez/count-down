@@ -136,5 +136,8 @@ Este repositorio contiene un componente de reloj (count-down) que permite inerta
     <count-down :text-color="color1" :background-color="color2"  :clock-type="'up'" @time-stoped="eventoFinalizacion" :identifier="'countdown customizado'"></count-down>
 ```
 
-![Interfaz principal](./imagenes/reloj.gif)  
+<p align="center">
+   <img src="./imagenes/reloj.gif" alt="Interfaz principal">
+</p>
+
 

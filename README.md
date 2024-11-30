@@ -136,6 +136,9 @@ Este repositorio contiene un componente de reloj (count-down) que permite inerta
     <count-down :text-color="color1" :background-color="color2"  :clock-type="'up'" @time-stoped="eventoFinalizacion" :identifier="'countdown customizado'"></count-down>
 ```
 
+- El siguiente gif muestra dos relojes donde Reloj 1 está configurado en modo cuenta atrás y Reloj 2 se encuentra configurado con una cuenta progresiva
+- El Reloj 2 además es cambiado de color de forma dinamica con un boton al cambiar los valores de ***text-color*** y ***background-color***
+
 <p align="center">
    <img src="./imagenes/reloj.gif" alt="Interfaz principal">
 </p>

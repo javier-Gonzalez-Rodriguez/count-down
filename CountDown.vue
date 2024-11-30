@@ -67,7 +67,6 @@
 </template>
 
 <script>
-import { nextTick } from 'vue';
     export default {
         name: 'custom-count-down',
         props: {
